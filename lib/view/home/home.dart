@@ -8,60 +8,31 @@ class Home extends StatelessWidget {
         title: Text('Alternatif'),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 200.0, 0, 0),
-        child: Column(
-          children: [
-            Center(
-              child: Text('Home'),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/content');
-              },
-              child: Text('Content'),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/list');
-              },
-              child: Text('List'),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/profile');
-              },
-              child: Text('Profile'),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/order');
-              },
-              child: Text('Order'),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/faq');
-              },
-              child: Text('FAQ'),
-            ),
-          ],
-        ),
+      body: Center(child: Text('Home')),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: 'FAQ',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add),
+            label: 'Pesan',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.view_list),
+            label: 'Daftar',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
       ),
     );
   }
