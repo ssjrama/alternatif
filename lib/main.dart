@@ -20,7 +20,7 @@ void main() {
       '/register': (context) => Register(),
       '/home': (context) => Home(),
       '/content': (context) => Content(),
-      '/list': (context) => List(),
+      '/list': (context) => ListPesan(),
       '/detail': (context) => Detail(),
       '/payment': (context) => Payment(),
       '/profile': (context) => Profile(),
