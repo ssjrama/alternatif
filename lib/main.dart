@@ -14,6 +14,8 @@ import 'package:alternatif/view/faq.dart';
 void main() {
   runApp(MaterialApp(
     title: 'Alternatif',
+    theme: ThemeData(
+        primaryColor: Colors.brown[500], accentColor: Colors.brown[300]),
     initialRoute: '/',
     routes: {
       '/': (context) => Login(),

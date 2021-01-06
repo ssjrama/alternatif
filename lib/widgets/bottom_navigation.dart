@@ -48,7 +48,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Aplikasi'),
+        title: const Text('SIB'),
         centerTitle: true,
       ),
       body: Center(

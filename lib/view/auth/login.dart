@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Log In'),
+        centerTitle: true,
         leading: Container(),
       ),
       body: Center(
@@ -54,7 +55,7 @@ class Login extends StatelessWidget {
                           ),
                           TextSpan(
                             text: 'Daftar.',
-                            style: Styles.p.copyWith(color: Colors.blue[500]),
+                            style: Styles.p.copyWith(color: Colors.brown[500]),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () => {
                                     Navigator.pushNamed(context, '/register'),
@@ -69,7 +70,7 @@ class Login extends StatelessWidget {
                     child: RichText(
                       text: TextSpan(
                           text: 'Lupa Password ?',
-                          style: Styles.p.copyWith(color: Colors.blue[500]),
+                          style: Styles.p.copyWith(color: Colors.brown[500]),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () => {
                                   Navigator.pushNamed(context, '/home'),

@@ -5,7 +5,7 @@ class Payment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Alternatif'),
+        title: Text('SIB'),
         centerTitle: true,
       ),
       body: Padding(

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Styles {
-  static TextStyle defaultStyle = TextStyle(
-    color: Colors.grey[900]
-  );
+  static TextStyle defaultStyle = TextStyle(color: Colors.grey[900]);
 
   static TextStyle h1 = defaultStyle.copyWith(
     fontWeight: FontWeight.w700,
@@ -26,7 +24,7 @@ class Styles {
     focusColor: Colors.grey[900],
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Colors.blue,
+        color: Colors.brown,
         width: 2.0,
       ),
     ),
@@ -41,5 +39,4 @@ class Styles {
       color: Colors.grey[600],
     ),
   );
-
 }

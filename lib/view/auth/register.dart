@@ -8,6 +8,7 @@ class Register extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Register'),
+        centerTitle: true,
       ),
       body: Center(
         child: Container(
